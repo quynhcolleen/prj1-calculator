@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gay af calculator</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital@0;1&display=swap" rel="stylesheet">
+  <script src="./script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator">
+      <form>
+        <div class="display">
+          <p class="displayScreen">
+            <input type="text" id="screen" readonly>
+        </div>
+        <div>
+          <div class="top-row">
+            <input class="button" type="button" value="7" onclick="display1 ('7')">
+            <input class="button" type="button" value="8" onclick="display1 ('8')">
+            <input class="button" type="button" value="9" onclick="display1 ('9')">
+            <input class="button" type="button" value="DEL" onclick="deleteLast()">
+            <input class="button" type="button" value="C" onclick="clearDisplay()">
+          </div>
+          <div>
+            <input class="button" type="button" value="4" onclick="display1 ('4')">
+            <input class="button" type="button" value="5" onclick="display1 ('5')">
+            <input class="button" type="button" value="6" onclick="display1 ('6')">
+            <input class="button" type="button" value="*" onclick="display1 ('*')">
+            <input class="button" type="button" value="/" onclick="display1 ('/')">
+          </div>
+          <div>
+            <input class="button" type="button" value="1" onclick="display1 ('1')">
+            <input class="button" type="button" value="2" onclick="display1 ('2')">
+            <input class="button" type="button" value="3" onclick="display1 ('3')">
+            <input class="button" type="button" value="+" onclick="display1 ('+')">
+            <input class="button" type="button" value="-" onclick="display1 ('-')">
+          </div>
+          <div>
+            <input class="button" type="button" value="0" onclick="display1 ('0')">
+            <input class="button" type="button" value="." onclick="display1 ('.')">
+            <input class="button" type="button" value="00" onclick="display1 ('00')">
+            <input class="button button-equal" type="button" value="=" onclick="calculate()">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
